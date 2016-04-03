@@ -1,0 +1,30 @@
+<ion-header-bar class="bar-assertive">
+<h1><i class="icon ion-flash padding"></i></h1>
+	<h1 class="title">Weather App</h1>
+</ion-header-bar>
+  
+  <ion-content class="has-header padding" >
+    <!-- Display current location's weather data-->
+    <br>
+    <div class="item item-divider item-energized padding"><center>{{city}}</center></div>
+    <br>
+    <div class="item item-divider item-stable padding">TimeZone: {{current.timezone}}</div>
+    <br>
+    <div class="item item-divider item-stable padding"><weather-icon icon="current.icon" id="current-icon"></weather-icon>Summary: {{current.currently.summary}}</div>
+  	<br>
+  	<div class="item item-divider item-balanced padding"><center>Current Temperature Status</center></div>  
+  	
+  	<a class="item"><b>Fahrenheit :</b> 
+  	<span class="large">{{current.currently.temperature}} &deg; F</span></a>
+  	<a class="item"><b>Celsius :</b>
+	<span class="large">{{(current.currently.temperature-32)*5/9 | number:2}} &deg; C</span></a>
+<br>
+	<div class="item item-divider item-calm padding"><center>Other Weather Details</center></div> 
+	<b><a class="item">Precipitation Probability: {{current.currently.precipProbability}}</a>
+	<a class="item">Humidity: {{current.currently.humidity}}</a>
+	<a class="item">Wind Speed: {{current.currently.windSpeed}} mph
+	</a></b>
+
+
+  </ion-content>
+

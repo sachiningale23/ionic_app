@@ -1,0 +1,15 @@
+<ion-header-bar class="bar-positive">
+  <h1 class="title">Cities</h1>
+</ion-header-bar>
+
+  <ion-content class="has-header">
+        <ion-list>
+    		  
+          <ion-item ng-repeat="city in cities">
+              <b><a class="item item-stable item-icon-right" ng-click="changeCity('{{city.id}}')">{{city.name}}
+              <i class="icon ion-chevron-right icon-accessory"></i>
+              </a></b>
+    		  </ion-item>
+      
+        </ion-list>
+   </ion-content>
