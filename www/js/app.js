@@ -22,6 +22,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 .config(function($stateProvider, $urlRouterProvider) {
 $stateProvider
 // setup an abstract state for the tabs directive
+// FIXME
     .state('tab', {
       url: "/tab",
       abstract: true,
